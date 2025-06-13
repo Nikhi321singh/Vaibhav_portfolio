@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: 
+        linear-gradient(-45deg, rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7), rgba(30, 60, 114, 0.7), rgba(15, 32, 39, 0.7)),
+        url('your-photo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+      margin-top: 20px;
+      animation: fadeIn 4s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Wait kro yaar, abhi sikh raha hu 😎</h1>
+  <p>— Vaibhav Singh</p>
+</body>
+</html>
